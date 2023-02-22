@@ -1,7 +1,6 @@
 # Pixy2 Block for EV3-G (Lite)
-================================
 
-![](https://github.com/ofdl-robotics-tw/EV3-Pixy2_Lite-Block/raw/master/Pixy2_Lite_Block.png)
+![](https://raw.githubusercontent.com/ofdl-robotics-tw/EV3-Pixy2_Lite-Block/main/Pixy2_Lite_Block.png)
 
 You can download ev3b file from release page：[Latest](https://github.com/ofdl-robotics-tw/EV3-Pixy2_Lite-Block/releases/)
 
