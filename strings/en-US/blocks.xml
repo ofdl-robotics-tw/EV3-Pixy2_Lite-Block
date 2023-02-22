@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="OFDL Pixy2">
+	<PolyGroup Name="OFDL_Pixy2" DisplayName="Pixy2 Camera Lite - OFDL Dev." DisplayNamePrefix="Pixy2">
+      <Parameter Name="Port" DisplayName="Port" Link="page.html?Path=editor%2FPortSelector.html#Port">
+        <Description><![CDATA[Many programming blocks require that you select the ports on the EV3 Brick (A, B, C, D, 1, 2, 3, and 4) that these blocks will use. The Port Selectors are in the top right-hand corner of these blocks.]]></Description>
+      </Parameter>
+      <Parameter Name="xOut" DisplayName="X Centroid">
+        <Description><![CDATA[<p>Outputs the X location of the center of the largest object that Pixy has found. The number returned ranges from 0 to 255, with 0 being the rightmost pixel if facing the camera lens.</p>]]></Description>
+      </Parameter>
+      <Parameter Name="yOut" DisplayName="Y Centroid">
+        <Description><![CDATA[<p>Outputs the Y location of the center of the largest object that Pixy found. The number returned is from 0 to 159, with 0 being the topmost pixel.</p>]]></Description>
+      </Parameter>
+      <Parameter Name="widthOut" DisplayName="Width">
+        <Description><![CDATA[<p>Outputs the width of the largest block that Pixy has found. The number returned is from 1 to 256.</p>]]></Description>
+      </Parameter>
+      <Parameter Name="heightOut" DisplayName="Height">
+        <Description><![CDATA[<p>Outputs the height of the largest block that Pixy has found. The number returned is from 1 to 256.</p>]]></Description>
+      </Parameter>
+      <!--<Parameter Name="lampEnable" DisplayName="Lamp On">
+        <Description><![CDATA[<p>Turns Pixy2 Lamp on/off.</p>]]></Description>
+      </Parameter>-->
+      <Block Mode="OFDL_Pixy2_FindLargest" DisplayName="CCC (Find Largest)"></Block>
+	  <!--<Block Mode="OFDL_Pixy2_LampSwitch" DisplayName="Lamp Switch"></Block>-->
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>
