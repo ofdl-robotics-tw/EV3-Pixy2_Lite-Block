@@ -4,7 +4,7 @@
 
 You can download ev3b file from release page：[Latest](https://github.com/ofdl-robotics-tw/EV3-Pixy2_Lite-Block/releases/)
 
-This is a lite version of Pixy2 block, only have CCC find largest object function (the most commonly used function of WRO RoboSport), and IIC function is rewritten for better performance.
+This is a lite version of Pixy2 block, the IIC function is rewritten for better performance.
  
 This Block made By OFDL Taiwan. Any Question? Please contact us [OFDL
 Facebook Page](https://www.facebook.com/cljhofdl)
@@ -15,16 +15,24 @@ onwards (include Home, Education, Developer and LabVIEW® ver.).
 It is recommended that the EV3 Firmware is always updated to the latest
 version released from LEGO®. (1.09E recommended)
 
-Pixy2_LITE Block is not officially supported by the LEGO® Group.
+Pixy2 LITE Block is not officially supported by the LEGO® Group.
 
 * * * * *
 
 Modes
 -----
 
-### ・CCC (Find Largest)
+### ・CCC (By Largest)
 
 Will return the largest object info (X, Y, W, H). 
+
+### ・CCC (By Signature)
+
+Will return the specific object info (X, Y, W, H) by signature. 
+
+### ・Lamp Switch
+
+Turn the Pixy2 lamp on or off. 
 
 
 * * * * *

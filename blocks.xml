@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorDefinitions>
-  <PolyGroups ModuleName="OFDL Pixy2" ModuleVersion="2.09 (Remake By OFDL Dev.)">
+  <PolyGroups ModuleName="OFDL Pixy2" ModuleVersion="3.0 (By OFDL Dev.)">
 	  <PolyGroup Name="OFDL_Pixy2" BlockFamily="Sensor">
-      <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.3" />
-      <Parameter Name="xOut" Identification="builtin://identification_x.png" DataType="Single" Direction="Output" />
-      <Parameter Name="yOut" Identification="builtin://identification_y.png" DataType="Single" Direction="Output" />
+      <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1" />
+	  <Parameter Name="signatureIn" Identification="builtin://Identification_Index.png" DataType="Int16" Direction="Input" DefaultValue="1" />
+      <Parameter Name="xOut" Identification="builtin://Identification_x.png" DataType="Single" Direction="Output" />
+      <Parameter Name="yOut" Identification="builtin://Identification_y.png" DataType="Single" Direction="Output" />
       <Parameter Name="widthOut" Identification="builtin://Identification_Width.png" DataType="Single" Direction="Output" />
       <Parameter Name="heightOut" Identification="builtin://Identification_Height.png" DataType="Single" Direction="Output" />
-      <!--<Parameter Name="lampEnable" Identification="Generate_Light.png" DataType="Boolean" Direction="Input" DefaultValue="False" />-->
+	  <Parameter Name="lampEnable" Identification="builtin://Identification_MeasuredLight.png" DataType="Boolean" Direction="Input" DefaultValue="False" />
       <Hardware>
         <NXTPlotColor>#ffff3132</NXTPlotColor>
         <EV3PlotColor>#ff785028</EV3PlotColor>
@@ -26,13 +27,24 @@
         <PaletteInfo Weight="0.5" />
 		<Flags>PBROnly</Flags>
       </Block>
-	  <!--<Block>
+	  <Block>
+        <Mode>OFDL_Pixy2_FindSIG</Mode>
+        <Reference Type="VILib" Name="OFDL_Pixy2_FindSIG.vix" />
+        <ParameterReference Name="Port" />
+        <ParameterReference Name="signatureIn" />
+        <ParameterReference Name="xOut" />
+        <ParameterReference Name="yOut" />
+        <ParameterReference Name="widthOut" />
+        <ParameterReference Name="heightOut" />
+		<Flags>PBROnly</Flags>
+      </Block>
+	  <Block>
         <Mode>OFDL_Pixy2_LampSwitch</Mode>
         <Reference Type="VILib" Name="OFDL_Pixy2_LampSwitch.vix" />
         <ParameterReference Name="Port" />
         <ParameterReference Name="lampEnable" />
 		<Flags>PBROnly</Flags>
-      </Block>-->
+      </Block>
     </PolyGroup>
   </PolyGroups>
 </EditorDefinitions>
